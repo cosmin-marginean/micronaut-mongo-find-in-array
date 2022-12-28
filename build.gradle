@@ -11,6 +11,7 @@ group = "test"
 repositories {
     mavenLocal()
     mavenCentral()
+    maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 
@@ -31,7 +32,7 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.20'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.20'
 
-    implementation 'io.micronaut.data:micronaut-data-mongodb:3.9.2'
+    implementation 'io.micronaut.data:micronaut-data-mongodb:3.9.2-SNAPSHOT'
     implementation 'io.micronaut.mongodb:micronaut-mongo-sync'
     implementation 'io.micronaut.kotlin:micronaut-kotlin-runtime'
     implementation 'io.micronaut:micronaut-inject-java'
