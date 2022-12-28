@@ -26,7 +26,7 @@ micronaut {
 
 dependencies {
     kapt 'io.micronaut:micronaut-inject-java'
-    kapt 'io.micronaut.data:micronaut-data-document-processor'
+    kapt 'io.micronaut.data:micronaut-data-document-processor:3.9.2-SNAPSHOT'
     kapt 'io.micronaut.serde:micronaut-serde-processor'
 
     implementation 'org.jetbrains.kotlin:kotlin-reflect:1.7.20'
