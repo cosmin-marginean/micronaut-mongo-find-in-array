@@ -9,12 +9,12 @@ import org.junit.jupiter.api.Test
 class BugTest {
 
     @Inject
-    lateinit var documentRepository: DocumentRepository
+    lateinit var documentRepository: PojoRepository
 
     @Test
     fun test() {
-        documentRepository.save(Document("john", listOf("a", "b")))
-        documentRepository.save(Document("anne", listOf("a", "c")))
+        documentRepository.save(Pojo("john", listOf("a", "b")))
+        documentRepository.save(Pojo("anne", listOf("a", "c")))
         assertEquals(2, documentRepository.findByTagsCollectionContains("a").size)
     }
 }

@@ -7,7 +7,7 @@ import java.util.*
 
 @Serdeable
 @MappedEntity
-data class Document(
+data class Pojo(
     val firstName: String,
     val tags: List<String>,
 

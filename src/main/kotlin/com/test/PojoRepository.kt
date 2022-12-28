@@ -4,7 +4,7 @@ import io.micronaut.data.mongodb.annotation.MongoRepository
 import io.micronaut.data.repository.PageableRepository
 
 @MongoRepository
-interface DocumentRepository : PageableRepository<Document, String> {
+interface PojoRepository : PageableRepository<Pojo, String> {
 
-    fun findByTagsCollectionContains(tag: String): List<Document>
+    fun findByTagsCollectionContains(tag: String): List<Pojo>
 }
